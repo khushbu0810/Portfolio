@@ -1,21 +1,20 @@
 <div class="portfolio">
 
-    <!-- NAVBAR -->
+    <!-- NAVIGATION -->
     <header class="navbar" [class.scrolled]="scrolled">
         <div class="nav-container">
 
             <a class="logo" href="#hero" (click)="scroll('hero')">
-                <span>KHUSHBU</span><b>.DEV</b>
+                KHUSHBU<span>.DEV</span>
             </a>
 
-            <nav>
-                <a href="#hero" (click)="scroll('profile')">Profile</a>
+            <nav class="nav-links">
+                <a href="#hero" (click)="scroll('hero')">Profile</a>
                 <a href="#experience" (click)="scroll('experience')">Experience</a>
                 <a href="#skills" (click)="scroll('skills')">Skills</a>
                 <a href="#projects" (click)="scroll('projects')">Projects</a>
-                <a href="#contact" class="nav-contact" (click)="scroll('contact')">
-                    Contact
-                </a>
+                <a href="#highlights" (click)="scroll('highlights')">Highlights</a>
+                <a href="#contact" (click)="scroll('contact')" class="nav-cta">Contact ↗</a>
             </nav>
 
         </div>
@@ -25,101 +24,94 @@
     <!-- HERO -->
     <section class="hero" id="hero">
 
-        <div class="hero-glow"></div>
+        <div class="container">
 
-        <div class="container hero-container">
+            <div class="hero-topline">
+                <span><i class="status-dot"></i> SOFTWARE ENGINEER · PUNE, INDIA</span>
+            </div>
 
-            <div class="hero-content">
+            <div class="hero-layout">
 
-                <span class="eyebrow">
-                    JAVA FULL-STACK SOFTWARE ENGINEER
-                </span>
+                <div class="hero-content">
 
-                <h1>
-                    Khushbu
-                    <span>Rani</span>
-                </h1>
+                    <span class="eyebrow">JAVA FULL-STACK SOFTWARE ENGINEER</span>
 
-                <p class="hero-role">
-                    Java · Spring Boot · Angular · Microservices
-                </p>
+                    <h1>
+                        Khushbu
+                        <span>Rani.</span>
+                    </h1>
 
-                <p class="hero-description">
-                    Java Full-Stack Software Engineer at
-                    <strong>LTIMindtree</strong> with 1+ year of professional
-                    experience building secure enterprise applications.
-                    Experienced in Java, Spring Boot, Angular, TypeScript,
-                    MySQL, Spring Security, JPA/Hibernate, Microservices,
-                    Apache Kafka, REST APIs, JWT, OAuth 2.0, RBAC and Docker.
-                </p>
+                    <p class="hero-intro">
+                        Java Full-Stack Software Engineer at
+                        <strong>LTIMindtree</strong> with 1.5 years of professional
+                        experience developing secure enterprise applications.
 
-                <div class="hero-actions">
+                    </p>
 
-                    <button class="btn btn-primary" type="button" (click)="scroll('projects')">
-                        View Projects
-                        <span>↗</span>
-                    </button>
 
-                    <a class="btn btn-secondary" href="https://github.com/khushbu0810" target="_blank"
-                        rel="noopener noreferrer">
-                        GitHub
-                        <span>↗</span>
-                    </a>
 
-                    <a class="btn btn-secondary" href="https://www.linkedin.com/in/khushbu-rani-0bba16411"
-                        target="_blank" rel="noopener noreferrer">
-                        LinkedIn
-                        <span>↗</span>
-                    </a>
+                    <div class="hero-actions">
 
-                </div>
+                        <button class="btn btn-primary" type="button" (click)="scroll('projects')">
+                            View Projects ↗
+                        </button>
 
-                <div class="hero-stats">
+                        <a class="btn btn-outline" href="https://github.com/khushbu0810" target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
 
-                    <div>
-                        <strong>1+</strong>
-                        <span>Years Experience</span>
-                    </div>
+                        <a class="btn btn-outline" href="https://www.linkedin.com/in/khushbu-rani-0bba16411"
+                            target="_blank" rel="noopener noreferrer">
+                            LinkedIn ↗
+                        </a>
 
-                    <div>
-                        <strong>3+</strong>
-                        <span>Projects</span>
-                    </div>
-
-                    <div>
-                        <strong>15+</strong>
-                        <span>Technologies</span>
                     </div>
 
                 </div>
+
+
+                <!-- PROFILE PANEL -->
+                <aside class="hero-aside">
+                    <div class="hero-monogram">
+                        <img src="/photo.jpeg" alt="Khushbu Rani" class="hero-photo" />
+                    </div>
+                    <p><b>
+                            Java Full-Stack Software Engineer
+                            specializing in backend development,
+                            enterprise applications and microservices.
+                        </b></p>
+
+                    <div class="aside-bottom">
+                        <span>JAVA</span>
+                        <span>SPRING BOOT</span>
+                        <span>ANGULAR</span>
+                    </div>
+
+                </aside>
 
             </div>
 
 
-            <!-- SIMPLE PROFILE -->
-            <div class="profile-contact">
+            <!-- STATISTICS -->
+            <div class="hero-stats">
 
-                <img src="/photo.jpeg" alt="Khushbu Rani" class="profile-image">
-
-                <div class="profile-contact-info">
-
-                    <p>Java Full-Stack Software Engineer</p>
-
+                <div class="stat">
+                    <strong>1.5</strong>
+                    <span>Years Experience</span>
                 </div>
 
-                <div class="contact-details">
-
-                    <a href="mailto:8307734061rani@gmail.com">
-                        <span>Email</span>
-                        8307734061rani@gmail.com
-                    </a>
-
-                    <a href="tel:+918307734061">
-                        <span>Phone</span>
-                        +91 83077 34061
-                    </a>
-
+                <div class="stat">
+                    <strong>04+</strong>
+                    <span>Projects Developed</span>
                 </div>
+
+                <div class="stat">
+                    <strong>15+</strong>
+                    <span>Technologies</span>
+                </div>
+
+
 
             </div>
 
@@ -129,45 +121,51 @@
 
 
     <!-- EXPERIENCE -->
-    <section class="section section-alt" id="experience">
+    <section class="section experience-section" id="experience">
 
         <div class="container">
 
             <div class="section-heading">
 
-                <span>01 · EXPERIENCE</span>
+                <!-- <span class="section-label">01 — PROFESSIONAL EXPERIENCE</span> -->
 
-                <h2>
-                    PROFESSIONAL
-                    <em>EXPERIENCE</em>
-                </h2>
+                <div class="heading-layout">
 
+                    <h2>
+                        Professional
+                        Experience
+                    </h2>
+
+
+
+                </div>
 
             </div>
 
 
-            <article class="experience">
+            <article class="experience-card">
 
                 <div class="experience-header">
 
                     <div>
-                        <span class="company-badge">
-                            LTIMINDTREE
-                        </span>
 
-                        <h3>JAVA FULL-STACK SOFTWARE ENGINEER</h3>
+                        <span class="company-badge">LTIMINDTREE</span>
+
+                        <h3>Java Full-Stack Software Engineer</h3>
+
                     </div>
 
-                    <span class="experience-date">
-                        JUN 2025 — PRESENT
-                    </span>
+                    <div class="experience-meta">
+                        <span>JUNE 2025 — PRESENT</span>
+                        <span>PUNE, INDIA</span>
+                    </div>
 
                 </div>
 
 
                 <p class="experience-summary">
-                    Developing and maintaining enterprise web applications
-                    using Java, Spring Boot, Angular, MySQL and Spring Data JPA,
+                    Developing and maintaining enterprise web applications using
+                    Java, Spring Boot, Angular, MySQL and Spring Data JPA,
                     with focus on REST APIs, database operations, application
                     debugging and production support.
                 </p>
@@ -175,66 +173,82 @@
 
                 <div class="experience-grid">
 
-                    <div>
-                        <span>01</span>
+                    <div class="experience-item">
 
-                        <h4>Enterprise Application Development</h4>
+                        <span class="item-number">01</span>
 
-                        <p>
-                            Developed and maintained enterprise applications
-                            using Java, Spring Boot, Angular and TypeScript.
-                        </p>
+                        <div>
+                            <h4>Enterprise Application Development</h4>
+
+                            <p>
+                                Developed and maintained enterprise applications
+                                using Java, Spring Boot, Angular and TypeScript.
+                            </p>
+                        </div>
+
                     </div>
 
 
-                    <div>
-                        <span>02</span>
+                    <div class="experience-item">
 
-                        <h4>API & Database Engineering</h4>
+                        <span class="item-number">02</span>
 
-                        <p>
-                            Integrated REST APIs, developed SQL queries and
-                            worked with Spring Data JPA and MySQL for
-                            persistence and database operations.
-                        </p>
+                        <div>
+                            <h4>API & Database Engineering</h4>
+
+                            <p>
+                                Integrated REST APIs, developed SQL queries and
+                                worked with Spring Data JPA and MySQL for
+                                persistence and database operations.
+                            </p>
+                        </div>
+
                     </div>
 
 
-                    <div>
-                        <span>03</span>
+                    <div class="experience-item">
 
-                        <h4>Debugging & Optimization</h4>
+                        <span class="item-number">03</span>
 
-                        <p>
-                            Investigated application defects, resolved
-                            production issues and optimized queries and
-                            application workflows for improved stability.
-                        </p>
+                        <div>
+                            <h4>Debugging & Optimization</h4>
+
+                            <p>
+                                Investigated application defects, resolved
+                                production issues and optimized queries and
+                                application workflows for improved stability.
+                            </p>
+                        </div>
+
                     </div>
 
 
-                    <div>
-                        <span>04</span>
+                    <div class="experience-item">
 
-                        <h4>Agile Engineering</h4>
+                        <span class="item-number">04</span>
 
-                        <p>
-                            Participated in sprint planning, code reviews,
-                            testing, debugging and production support within
-                            an Agile/Scrum environment.
-                        </p>
+                        <div>
+                            <h4>Agile Engineering</h4>
+
+                            <p>
+                                Participated in sprint planning, code reviews,
+                                testing, debugging and production support within
+                                an Agile/Scrum environment.
+                            </p>
+                        </div>
+
                     </div>
 
                 </div>
 
 
-                <div class="tech-list">
+                <div class="experience-tags">
 
                     <span>Java</span>
                     <span>Spring Boot</span>
                     <span>Microservices</span>
                     <span>Apache Kafka</span>
-                    <span>RESTful APIs</span>
+                    <span>REST APIs</span>
                     <span>Spring Data JPA</span>
                     <span>Hibernate</span>
                     <span>TypeScript</span>
@@ -242,7 +256,7 @@
                     <span>MySQL</span>
                     <span>Maven</span>
                     <span>Git</span>
-                    <span>Agile / Scrum Methodology</span>
+                    <span>Agile / Scrum</span>
 
                 </div>
 
@@ -253,90 +267,152 @@
     </section>
 
 
-    <!-- SKILLS -->
-    <section class="section" id="skills">
+    <!-- TECHNICAL SKILLS -->
+    <section class="section skills-section" id="skills">
 
         <div class="container">
 
-            <div class="section-heading">
+            <div class="skills-header">
 
-                <span>02 · TECHNICAL SKILLS</span>
+                <div>
+                    <!-- <span class="section-label">02 — TECHNICAL SKILLS</span> -->
+                    <h2>Technical Expertise</h2>
+                </div>
 
-                <h2>
-                    MY TECHNICAL
-                    <em> STACK</em>
-                </h2>
+
 
             </div>
-            <div class="architecture">
 
-                <span>JAVA</span>
-                <b>→</b>
-                <span>SPRING BOOT</span>
-                <b>→</b>
-                <span>REST APIS</span>
-                <b>→</b>
-                <span>MICROSERVICES</span>
-                <b>→</b>
-                <span>KAFKA</span>
-                <b>→</b>
-                <span>DOCKER</span>
-                <b>→</b>
-                <span>SYSTEM DESIGN</span>
 
-            </div>
-            <br><br>
+            <!-- TECHNOLOGY LOGOS -->
+            <div class="technology-grid">
 
-            <div class="skills-grid">
-
-                <div class="skill-group">
-                    <span>01</span>
-                    <h3>Languages</h3>
-                    <p>
-                        Java · SQL · TypeScript · JavaScript · HTML · CSS
-                    </p>
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    <span>Java</span>
                 </div>
 
-                <div class="skill-group">
-                    <span>02</span>
-                    <h3>Frameworks & Libraries</h3>
-                    <p>
-                        Spring Boot · Spring Security · JPA · Hibernate ·
-                        Angular
-                    </p>
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                        alt="Spring Boot">
+                    <span>Spring Boot</span>
                 </div>
 
-                <div class="skill-group">
-                    <span>03</span>
-                    <h3>Architecture & Design</h3>
-                    <p>
-                        RESTful APIs · Microservices · System Design
-                    </p>
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <span>MySQL</span>
                 </div>
 
-                <div class="skill-group">
-                    <span>04</span>
-                    <h3>Messaging & Real-Time</h3>
-                    <p>
-                        Apache Kafka · WebSocket ·
-                        Event-Driven Architecture
-                    </p>
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg"
+                        alt="Hibernate">
+                    <span>Hibernate / Spring JPA</span>
                 </div>
 
-                <div class="skill-group">
-                    <span>05</span>
-                    <h3>Authentication & Authorization</h3>
-                    <p>
-                        JWT · OAuth 2.0 · RBAC · Spring Security
-                    </p>
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="Maven">
+                    <span>Maven</span>
                 </div>
 
-                <div class="skill-group">
-                    <span>06</span>
-                    <h3>Tools & Platforms</h3>
-                    <p>
-                        Docker · Git · Maven · MinIO · MySQL
-                    </p>
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg"
+                        alt="Apache Kafka">
+                    <span>Apache Kafka</span>
+                </div>
+
+                <div class="technology-item">
+                    <img src="https://cdn.simpleicons.org/swagger" alt="Swagger">
+                    <span>REST API / Swagger</span>
+                </div>
+
+
+
+                <div class="technology-item">
+                    <span>Microservices</span>
+                </div>
+
+                <div class="technology-item ">
+                    <span>OAuth 2.0</span>
+                </div>
+
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                        alt="Docker">
+                    <span>Docker</span>
+                </div>
+
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                        alt="Spring Security">
+                    <span>Spring Security</span>
+                </div>
+
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                        alt="TypeScript">
+                    <span>TypeScript</span>
+                </div>
+
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg"
+                        alt="Angular">
+                    <span>Angular</span>
+                </div>
+
+
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    <span>Git</span>
+                </div>
+
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub">
+                    <span>GitHub</span>
+                </div>
+
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <span>HTML5</span>
+                </div>
+
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <span>CSS3</span>
+                </div>
+
+
+                <div class="technology-item">
+                    <img src="https://cdn.simpleicons.org/jsonwebtokens" alt="JSON Web Tokens">
+                    <span>JWT</span>
+                </div>
+
+                <div class="technology-item">
+                    <img src="https://cdn.simpleicons.org/minio" alt="MinIO">
+                    <span>MinIO</span>
+                </div>
+
+                <div class="technology-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                    <span>SQL</span>
+                </div>
+
+                <div class="technology-item ">
+                    <span>RBAC</span>
+                </div>
+
+                <div class="technology-item ">
+                    <span>WebSocket</span>
+                </div>
+
+                <div class="technology-item ">
+                    <span>System Design <br><br> (HLD + LLD)</span>
                 </div>
 
             </div>
@@ -350,51 +426,54 @@
 
 
     <!-- PROJECTS -->
-    <section class="section section-alt" id="projects">
+    <section class="section projects-section" id="projects">
 
         <div class="container">
 
             <div class="section-heading">
 
-                <span>03 · PROJECTS</span>
+                <!-- <span class="section-label">03 — PROJECT PORTFOLIO</span> -->
 
-                <h2>
-                    SYSTEMS I'VE
-                    <em>BUILT.</em>
-                </h2>
+                <div class="heading-layout">
+
+                    <h2>
+                        Projects
+                    </h2>
 
 
+
+                </div>
 
             </div>
 
 
             <div class="projects-grid">
 
-                <!-- VISITOR PASS -->
-                <article class="project">
 
-                    <div class="project-header">
+                <!-- PROJECT 01: VISITORPASS -->
+                <article class="project-card">
 
-                        <span>PROJECT 01</span>
+                    <div class="project-card-top">
+                        <span class="project-number">01</span>
+                        <span class="project-category">EVENT-DRIVEN SYSTEM</span>
+                    </div>
 
-                        <a href="https://grand-alpaca-365ab0.netlify.app" target="_blank" rel="noopener noreferrer">
-                            🌐 Live Demo
+                    <div class="project-card-header">
+
+                        <div>
+                            <h3>VisitorPass</h3>
+                            <p>Event-Driven Visitor Access Platform</p>
+                        </div>
+
+                        <a href="https://grand-alpaca-365ab0.netlify.app" target="_blank" rel="noopener noreferrer"
+                            class="live-link">
+                            Live Demo ↗
                         </a>
 
                     </div>
 
 
-                    <span class="project-category">
-                        JAVA · SPRING BOOT · ANGULAR · MICROSERVICES
-                    </span>
-
-
-                    <h3>
-                        VISITORPASS – EVENT-DRIVEN VISITOR ACCESS PLATFORM
-                    </h3>
-
-
-                    <p>
+                    <p class="project-description">
                         Event-driven, microservices-based Visitor Management System
                         for residential communities, enabling secure digital visitor
                         registration, QR-based verification and role-based access
@@ -402,92 +481,108 @@
                     </p>
 
 
-                    <ul>
-
-                        <li>
-                            Developed secure authentication and authorization using
-                            Spring Security, JWT, Google OAuth 2.0 and RBAC.
-                        </li>
-
-                        <li>
-                            Implemented QR code-based visitor pass generation and
-                            verification using ZXing for paperless check-in workflows.
-                        </li>
-
-                        <li>
-                            Integrated Apache Kafka producers and consumers for
-                            asynchronous pass generation and cancellation events.
-                        </li>
-
-                        <li>
-                            Implemented REST APIs for synchronous communication
-                            between microservices and frontend services.
-                        </li>
-
-                        <li>
-                            Containerized microservices using Docker and deployed
-                            the application on Render with Aiven Kafka for cloud
-                            event messaging.
-                        </li>
-
-                    </ul>
-
-
-                    <div class="project-tech">
-
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>Spring Security</span>
-                        <span>JWT</span>
-                        <span>OAuth 2.0</span>
-                        <span>RBAC</span>
-                        <span>REST APIs</span>
-                        <span>Angular</span>
-                        <span>Apache Kafka</span>
+                    <div class="project-tech-preview">
+                        <span>Java</span> |
+                        <span>Spring Boot</span> |
+                        <span>Angular</span> |
+                        <span>Kafka</span> |
                         <span>Docker</span>
-                        <span>MySQL</span>
-                        <span>ZXing</span>
-
                     </div>
 
 
-                    <div class="project-actions">
+                    <details class="project-details">
 
-                        <a href="https://github.com/khushbu0810/visitor-pass" target="_blank" rel="noopener noreferrer">
-                            Source Code ↗
-                        </a>
+                        <summary>
+                            <span>View Project Details</span>
+                            <span class="toggle-icon">+</span>
+                        </summary>
 
-                    </div>
+                        <div class="project-expanded">
+
+                            <h4>Overview</h4>
+
+                            <p>
+                                An event-driven microservices architecture for secure
+                                visitor registration, QR-based pass verification and
+                                role-based access management.
+                            </p>
+
+                            <h4>Key Contributions</h4>
+
+                            <ul>
+                                <li>
+                                    Developed secure authentication and authorization using
+                                    Spring Security, JWT, Google OAuth 2.0 and RBAC.
+                                </li>
+
+                                <li>
+                                    Implemented QR code-based visitor pass generation and
+                                    verification using ZXing for paperless check-in workflows.
+                                </li>
+
+                                <li>
+                                    Integrated Apache Kafka producers and consumers for
+                                    asynchronous pass generation and cancellation events.
+                                </li>
+
+                                <li>
+                                    Implemented REST APIs for synchronous communication
+                                    between microservices and frontend services.
+                                </li>
+
+                                <li>
+                                    Containerized microservices using Docker and deployed
+                                    the application on Render with Aiven Kafka for cloud
+                                    event messaging.
+                                </li>
+                            </ul>
+
+                            <h4>Technology Stack</h4>
+
+                            <p class="expanded-tech">
+                                Java · Spring Boot · Spring Security · JWT · OAuth 2.0 ·
+                                RBAC · REST APIs · Angular · Apache Kafka · Docker ·
+                                MySQL · ZXing
+                            </p>
+
+                            <div class="project-actions">
+                                <a href="https://github.com/khushbu0810/visitor-pass" target="_blank"
+                                    rel="noopener noreferrer">
+                                    View Source Code ↗
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </details>
 
                 </article>
 
 
-                <!-- EVENTFLOW -->
-                <article class="project ">
+                <!-- PROJECT 02: EVENTFLOW -->
+                <article class="project-card">
 
-                    <div class="project-header">
+                    <div class="project-card-top">
+                        <span class="project-number">02</span>
+                        <span class="project-category">FULL-STACK PLATFORM</span>
+                    </div>
 
-                        <span>PROJECT 02</span>
+                    <div class="project-card-header">
 
-                        <!-- Replace with actual EventFlow GitHub URL if available -->
-                        <a href="https://venuepilot.netlify.app" target="_blank" rel="noopener noreferrer">
-                            🌐 Live Demo
+                        <div>
+                            <h3>EventFlow</h3>
+                            <p>Event Booking & Venue Management Platform</p>
+                        </div>
+
+                        <a href="https://venuepilot.netlify.app" target="_blank" rel="noopener noreferrer"
+                            class="live-link">
+                            Live Demo ↗
                         </a>
 
                     </div>
 
 
-                    <span class="project-category">
-                        JAVA · SPRING BOOT · ANGULAR · FULL STACK
-                    </span>
-
-
-                    <h3>
-                        EVENTFLOW – FULL-STACK EVENT BOOKING & VENUE MANAGEMENT PLATFORM
-                    </h3>
-
-
-                    <p>
+                    <p class="project-description">
                         Full-stack event booking and venue management platform
                         for managing venues, bookings, users and administrative
                         workflows with secure authentication and real-time
@@ -495,240 +590,291 @@
                     </p>
 
 
-                    <ul>
-
-                        <li>
-                            Developed RESTful APIs using Java, Spring Boot,
-                            Spring Data JPA and Hibernate for venue, booking,
-                            user and administrative workflows.
-                        </li>
-
-                        <li>
-                            Implemented authentication and role-based authorization
-                            using Spring Security, JWT, Google OAuth 2.0, password
-                            encryption and RBAC.
-                        </li>
-
-                        <li>
-                            Designed modular Controller-Service-Repository architecture
-                            for authentication, user management, file upload and
-                            dashboard operations.
-                        </li>
-
-                        <li>
-                            Integrated WebSocket-based real-time chat for
-                            instant communication between customers and
-                            venue owners.
-                        </li>
-
-                        <li>
-                            Integrated MinIO object storage for secure image
-                            upload and retrieval, supporting venue images and
-                            user-generated media.
-                        </li>
-
-                    </ul>
-
-
-                    <div class="project-tech">
-
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>Spring Security</span>
-                        <span>JWT</span>
-                        <span>OAuth 2.0</span>
-                        <span>RBAC</span>
-                        <span>Angular</span>
-                        <span>TypeScript</span>
-                        <span>REST APIs</span>
-                        <span>MySQL</span>
-                        <span>JPA</span>
-                        <span>Hibernate</span>
-                        <span>WebSocket</span>
+                    <div class="project-tech-preview">
+                        <span>Java</span> |
+                        <span>Spring Boot</span> |
+                        <span>Angular</span> |
+                        <span>WebSocket</span> |
                         <span>MinIO</span>
-
                     </div>
 
 
-                    <div class="project-actions">
+                    <details class="project-details">
 
-                        <a href="https://github.com/khushbu0810/staySphere" target="_blank" rel="noopener noreferrer">
-                            Source Code ↗
-                        </a>
+                        <summary>
+                            <span>View Project Details</span>
+                            <span class="toggle-icon">+</span>
+                        </summary>
 
-                    </div>
+                        <div class="project-expanded">
+
+                            <h4>Overview</h4>
+
+                            <p>
+                                Full-stack event booking and venue management application
+                                with secure authentication, administrative workflows,
+                                file management and real-time communication.
+                            </p>
+
+                            <h4>Key Contributions</h4>
+
+                            <ul>
+                                <li>
+                                    Developed RESTful APIs using Java, Spring Boot,
+                                    Spring Data JPA and Hibernate for venue, booking,
+                                    user and administrative workflows.
+                                </li>
+
+                                <li>
+                                    Implemented authentication and role-based authorization
+                                    using Spring Security, JWT, Google OAuth 2.0, password
+                                    encryption and RBAC.
+                                </li>
+
+                                <li>
+                                    Designed modular Controller-Service-Repository architecture
+                                    for authentication, user management, file upload and
+                                    dashboard operations.
+                                </li>
+
+                                <li>
+                                    Integrated WebSocket-based real-time chat for
+                                    instant communication between customers and
+                                    venue owners.
+                                </li>
+
+                                <li>
+                                    Integrated MinIO object storage for secure image
+                                    upload and retrieval, supporting venue images and
+                                    user-generated media.
+                                </li>
+                            </ul>
+
+                            <h4>Technology Stack</h4>
+
+                            <p class="expanded-tech">
+                                Java · Spring Boot · Spring Security · JWT · OAuth 2.0 ·
+                                RBAC · Angular · TypeScript · REST APIs · MySQL ·
+                                JPA · Hibernate · WebSocket · MinIO
+                            </p>
+
+                            <div class="project-actions">
+                                <a href="https://github.com/khushbu0810/staySphere" target="_blank"
+                                    rel="noopener noreferrer">
+                                    View Source Code ↗
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </details>
 
                 </article>
 
 
-                <!-- DOCUMENT VAULT -->
-                <article class="project">
+                <!-- PROJECT 03: DOCUMENT VAULT -->
+                <article class="project-card">
 
-                    <div class="project-header">
+                    <div class="project-card-top">
+                        <span class="project-number">03</span>
+                        <span class="project-category">DOCUMENT MANAGEMENT</span>
+                    </div>
 
-                        <span>PROJECT 03</span>
+                    <div class="project-card-header">
 
-                        <a href="https://visionary-101.netlify.app/" target="_blank" rel="noopener noreferrer">
-                            🌐 Live Demo
+                        <div>
+                            <h3>Document Vault</h3>
+                            <p>Document Management Application</p>
+                        </div>
+
+                        <a href="https://visionary-101.netlify.app/" target="_blank" rel="noopener noreferrer"
+                            class="live-link">
+                            Live Demo ↗
                         </a>
 
                     </div>
 
 
-                    <span class="project-category">
-                        JAVA · SPRING BOOT · ANGULAR · CLOUD STORAGE
-                    </span>
-
-
-                    <h3>
-                        DOCUMENT VAULT – DOCUMENT MANAGEMENT APPLICATION
-                    </h3>
-
-
-                    <p>
+                    <p class="project-description">
                         Full-stack document management application for uploading,
                         storing, retrieving and managing digital documents through
                         a simple web interface.
                     </p>
 
 
-                    <ul>
-
-                        <li>
-                            Developed REST APIs using Java and Spring Boot for
-                            document upload, retrieval and management workflows.
-                        </li>
-
-                        <li>
-                            Integrated Cloudinary for cloud-based document storage
-                            and file retrieval.
-                        </li>
-
-                        <li>
-                            Implemented document metadata persistence using
-                            Spring Data JPA, Hibernate and MySQL.
-                        </li>
-
-                        <li>
-                            Built the frontend using Angular and TypeScript,
-                            integrating REST APIs for document operations.
-                        </li>
-
-                    </ul>
-
-
-                    <div class="project-tech">
-
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>Angular</span>
-                        <span>TypeScript</span>
-                        <span>REST APIs</span>
-                        <span>MySQL</span>
-                        <span>Spring Data JPA</span>
-                        <span>Hibernate</span>
+                    <div class="project-tech-preview">
+                        <span>Java</span> |
+                        <span>Spring Boot</span> |
+                        <span>Angular</span> |
+                        <span>MySQL</span> |
                         <span>Cloudinary</span>
-
                     </div>
 
 
-                    <div class="project-actions">
+                    <details class="project-details">
 
-                        <a href="https://github.com/khushbu0810/documentVault" target="_blank"
-                            rel="noopener noreferrer">
-                            Source Code ↗
-                        </a>
+                        <summary>
+                            <span>View Project Details</span>
+                            <span class="toggle-icon">+</span>
+                        </summary>
 
-                    </div>
+                        <div class="project-expanded">
+
+                            <h4>Overview</h4>
+
+                            <p>
+                                Full-stack document management application for uploading,
+                                storing, retrieving and managing digital documents.
+                            </p>
+
+                            <h4>Key Contributions</h4>
+
+                            <ul>
+                                <li>
+                                    Developed REST APIs using Java and Spring Boot for
+                                    document upload, retrieval and management workflows.
+                                </li>
+
+                                <li>
+                                    Integrated Cloudinary for cloud-based document storage
+                                    and file retrieval.
+                                </li>
+
+                                <li>
+                                    Implemented document metadata persistence using
+                                    Spring Data JPA, Hibernate and MySQL.
+                                </li>
+
+                                <li>
+                                    Built the frontend using Angular and TypeScript,
+                                    integrating REST APIs for document operations.
+                                </li>
+                            </ul>
+
+                            <h4>Technology Stack</h4>
+
+                            <p class="expanded-tech">
+                                Java · Spring Boot · Angular · TypeScript · REST APIs ·
+                                MySQL · Spring Data JPA · Hibernate · Cloudinary
+                            </p>
+
+                            <div class="project-actions">
+                                <a href="https://github.com/khushbu0810/documentVault" target="_blank"
+                                    rel="noopener noreferrer">
+                                    View Source Code ↗
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </details>
 
                 </article>
 
-                <!-- VISITOR PASS -->
-                <article class="project">
 
-                    <div class="project-header">
+                <!-- PROJECT 04: BANKING -->
+                <article class="project-card">
 
-                        <span>PROJECT 04</span>
+                    <div class="project-card-top">
+                        <span class="project-number">04</span>
+                        <span class="project-category">FINANCIAL APPLICATION</span>
+                    </div>
 
-                        <a href="https://banking-08.netlify.app" target="_blank" rel="noopener noreferrer">
-                            🌐 Live Demo
+                    <div class="project-card-header">
+
+                        <div>
+                            <h3>Vertex Banking</h3>
+                            <p>Digital Banking Management System</p>
+                        </div>
+
+                        <a href="https://banking-08.netlify.app" target="_blank" rel="noopener noreferrer"
+                            class="live-link">
+                            Live Demo ↗
                         </a>
 
                     </div>
 
 
-                    <span class="project-category">
-                        JAVA · SPRING BOOT · ANGULAR · JWT · MySQL
-                    </span>
-
-
-                    <h3>
-                        VERTEX BANKING – DIGITAL BANKING MANAGEMENT SYSTEM
-                    </h3>
-
-
-                    <p>
-                        Full-stack banking platform built with a modular Spring Boot REST architecture,
-                        providing secure account, transaction, beneficiary, and QR payment management.
+                    <p class="project-description">
+                        Full-stack banking platform built with a modular Spring Boot
+                        REST architecture, providing secure account, transaction,
+                        beneficiary and QR payment management.
                     </p>
 
 
-                    <ul>
-
-                        <li>
-                            Developed secure authentication and authorization using
-                            Spring Security, JWT, Google OAuth 2.0 and RBAC.
-                        </li>
-
-                        <li>
-                            Integrated QR code generation and validation for digital payment workflows and secure
-                            transaction initiation.
-                        </li>
-
-                        <li>
-                            Implemented account and beneficiary management using Spring Data JPA, Hibernate, and MySQL
-                            with entity relationships and persistence.
-                        </li>
-
-                        <li>
-                            Built Angular + TypeScript frontend integrated with backend REST APIs using reusable
-                            components, services, routing, and form handling.
-                        </li>
-
-                        <li>
-                            Containerized microservices using Docker and deployed
-                            the application on Render with Aiven Kafka for cloud
-                            event messaging.
-                        </li>
-
-                    </ul>
-
-
-                    <div class="project-tech">
-
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>Spring Security</span>
-                        <span>JWT</span>
-                        <span>OAuth 2.0</span>
-                        <span>RBAC</span>
-                        <span>REST APIs</span>
-                        <span>Angular</span>
-                        <span>Maven</span>
-                        <span>Docker</span>
+                    <div class="project-tech-preview">
+                        <span>Java</span> |
+                        <span>Spring Boot</span> |
+                        <span>Angular</span> |
+                        <span>JWT</span> |
                         <span>MySQL</span>
-                        <span>Git</span>
-
                     </div>
 
 
-                    <div class="project-actions">
+                    <details class="project-details">
 
-                        <a href="https://github.com/khushbu0810/bankingApp" target="_blank" rel="noopener noreferrer">
-                            Source Code ↗
-                        </a>
+                        <summary>
+                            <span>View Project Details</span>
+                            <span class="toggle-icon">+</span>
+                        </summary>
 
-                    </div>
+                        <div class="project-expanded">
+
+                            <h4>Overview</h4>
+
+                            <p>
+                                Digital banking platform supporting secure account
+                                management, fund transfers, QR transactions and
+                                transaction history.
+                            </p>
+
+                            <h4>Key Contributions</h4>
+
+                            <ul>
+                                <li>
+                                    Developed authentication and authorization using
+                                    Spring Security, JWT, Google OAuth 2.0 and RBAC.
+                                </li>
+
+                                <li>
+                                    Integrated QR code generation and validation for
+                                    digital payment workflows and secure transaction initiation.
+                                </li>
+
+                                <li>
+                                    Implemented account and beneficiary management using
+                                    Spring Data JPA, Hibernate and MySQL with entity
+                                    relationships and persistence.
+                                </li>
+
+                                <li>
+                                    Built Angular and TypeScript frontend integrated
+                                    with backend REST APIs using reusable components,
+                                    services, routing and form handling.
+                                </li>
+
+                                <li>
+                                    Used Docker for application containerization.
+                                </li>
+                            </ul>
+
+                            <h4>Technology Stack</h4>
+
+                            <p class="expanded-tech">
+                                Java · Spring Boot · Spring Security · JWT · OAuth 2.0 ·
+                                RBAC · REST APIs · Angular · Maven · Docker · MySQL · Git
+                            </p>
+
+                            <div class="project-actions">
+                                <a href="https://github.com/khushbu0810/bankingApp" target="_blank"
+                                    rel="noopener noreferrer">
+                                    View Source Code ↗
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </details>
 
                 </article>
 
@@ -740,115 +886,70 @@
 
 
     <!-- CAREER HIGHLIGHTS -->
-    <section class="section" id="highlights">
+    <section class="section highlights-section" id="highlights">
 
         <div class="container">
 
             <div class="section-heading">
 
-                <span>04 · CAREER HIGHLIGHTS</span>
+                <!-- <span class="section-label">04 — CAREER HIGHLIGHTS</span> -->
 
-                <h2>
-                    EXPERIENCE BEYOND
-                    <em>PRODUCTION CODE</em>
-                </h2>
+                <div class="heading-layout">
 
-            </div>
+                    <h2>
+                        Additional
+                        <em>Experience.</em>
+                    </h2>
 
 
-            <div class="highlights">
 
-                <div>
-                    <span>01</span>
-                    <div>
-                        <h3>AI/ML Internship - Intrain Tech</h3>
-                        <p>
-                            Worked on credit card fraud detection using Python
-                            and machine learning techniques.
-                        </p>
-                    </div>
-                </div>
-
-                <div>
-                    <span>02</span>
-                    <div>
-                        <h3>Data Science - Indo-Euro Synchronization</h3>
-                        <p>
-                            Worked on data analysis and analytical workflows
-                            to derive insights from datasets.
-                        </p>
-                    </div>
-                </div>
-
-                <div>
-                    <span>03</span>
-                    <div>
-                        <h3>Google Cloud Computing Foundation</h3>
-                        <p>
-                            Completed Google Cloud Computing Foundation
-                            certification covering foundational cloud concepts.
-                        </p>
-                    </div>
                 </div>
 
             </div>
 
-        </div>
 
-    </section>
+            <div class="highlights-grid">
 
+                <article class="highlight-card">
 
-    <!-- ENGINEERING MINDSET -->
-    <section class="section section-alt">
+                    <span class="item-number">01</span>
 
-        <div class="container mindset">
+                    <h3>AI/ML Internship — Intrain Tech</h3>
 
-            <div class="section-heading">
+                    <p>
+                        Worked on credit card fraud detection using Python
+                        and machine learning techniques.
+                    </p>
 
-                <span>05 · ENGINEERING MINDSET</span>
-
-                <h2>
-                    I think about
-                    <em>how software works.</em>
-                </h2>
-
-            </div>
+                </article>
 
 
-            <div class="mindset-list">
+                <article class="highlight-card">
 
-                <div>
-                    <span>01</span>
-                    <div>
-                        <h3>Understand before implementing</h3>
-                        <p>
-                            Understand the underlying system, requirements
-                            and engineering trade-offs.
-                        </p>
-                    </div>
-                </div>
+                    <span class="item-number">02</span>
 
-                <div>
-                    <span>02</span>
-                    <div>
-                        <h3>Design for maintainability</h3>
-                        <p>
-                            Clear boundaries, reusable components, separation
-                            of concerns and predictable APIs.
-                        </p>
-                    </div>
-                </div>
+                    <h3>Data Science — Indo-Euro Synchronization</h3>
 
-                <div>
-                    <span>03</span>
-                    <div>
-                        <h3>Build → Debug → Learn</h3>
-                        <p>
-                            My strongest learning happens while building systems
-                            and solving real engineering problems.
-                        </p>
-                    </div>
-                </div>
+                    <p>
+                        Worked on data analysis and analytical workflows
+                        to derive insights from datasets.
+                    </p>
+
+                </article>
+
+
+                <article class="highlight-card">
+
+                    <span class="item-number">03</span>
+
+                    <h3>Google Cloud Computing Foundation</h3>
+
+                    <p>
+                        Completed Google Cloud Computing Foundation
+                        certification covering foundational cloud concepts.
+                    </p>
+
+                </article>
 
             </div>
 
@@ -858,66 +959,101 @@
 
 
     <!-- CONTACT -->
-    <section class="contact" id="contact">
-
-        <div class="contact-glow"></div>
-
-        <div class="container contact-content">
-
-            <span>06 · CONTACT</span>
-
-            <h2>
-                <em>Let's build something meaningful.</em>
-            </h2>
-
-            <p>
-                Open to software engineering opportunities involving
-                Java backend development, Spring Boot, Angular,
-                microservices, REST APIs, distributed systems,
-                application security and event-driven architecture.
-            </p>
 
 
-            <div class="contact-actions">
+    <section class="contact-section" id="contact">
+        <div class="container">
 
-                <a href="mailto:8307734061rani@gmail.com" class="contact-email">
-                    8307734061rani@gmail.com
-                    ↗
-                </a>
+            <div class="simple-contact">
+                <h2>Contact</h2>
 
-                <a href="https://www.linkedin.com/in/khushbu-rani-0bba16411" target="_blank">
-                    LinkedIn ↗
-                </a>
+                <div class="contact-card">
 
-                <a href="https://github.com/khushbu0810" target="_blank">
-                    GitHub ↗
-                </a>
+                    <a href="mailto:8307734061rani@gmail.com">
+                        <span>Email</span>
+                        <strong>8307734061rani@gmail.com ↗</strong>
+                    </a>
 
+                    <a href="tel:+918307734061">
+                        <span>Phone</span>
+                        <strong>+91 83077 34061</strong>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/khushbu-rani-0bba16411" target="_blank"
+                        rel="noopener noreferrer">
+                        <span>LinkedIn</span>
+                        <strong>LinkedIn Profile ↗</strong>
+                    </a>
+
+                    <a href="https://github.com/khushbu0810" target="_blank" rel="noopener noreferrer">
+                        <span>GitHub</span>
+                        <strong>GitHub Profile ↗</strong>
+                    </a>
+
+                </div>
             </div>
 
         </div>
-
     </section>
 
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
+        <div class="container simple-footer">
 
-        <div class="container footer-content">
+            <div>
+                <a href="#hero" class="logo">KHUSHBU.DEV</a>
+                <p>Java Full-Stack Software Engineer</p>
+            </div>
 
-            <strong>KHUSHBU<span>.DEV</span></strong>
-
-            <p>
-                JAVA · SPRING BOOT · ANGULAR · MICROSERVICES · KAFKA · DOCKER
-            </p>
-
-            <small>© 2026 Khushbu Rani</small>
+            <span>© 2026 Khushbu Rani</span>
 
         </div>
-
     </footer>
 
 
 
+    <!-- SIMPLE PERSONAL FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-personal">
+
+                <a class="logo" href="#hero" (click)="scroll('hero')">
+                    KHUSHBU<span>.DEV</span>
+                </a>
+
+                <span>Java Full-Stack Software Engineer</span>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <a href="mailto:8307734061rani@gmail.com">
+                    Email
+                </a>
+
+                <a href="tel:+918307734061">
+                    Phone
+                </a>
+
+                <a href="https://www.linkedin.com/in/khushbu-rani-0bba16411" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+                <a href="https://github.com/khushbu0810" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+            </div>
+
+            <span class="footer-copyright">
+                © 2026 Khushbu Rani
+            </span>
+
+        </div>
+
+    </footer>
 
 </div>
